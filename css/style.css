@@ -1,0 +1,337 @@
+body {
+  font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+ 
+
+  position: relative;
+}
+
+
+
+body.offcanvas-menu:before {
+  opacity: 1;
+  z-index: 1002;
+  visibility: visible;
+}
+
+p {
+  color: #b3b3b3;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+a {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
+a,
+a:hover {
+  text-decoration: none !important;
+}
+
+.bgLogo {
+  height: 100vh;
+  width: 100%;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: rgb(72, 72, 233);
+  width: 100%;
+  z-index: 5;
+}
+
+
+
+header .navbar-brand {
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+header .navbar-brand.absolute {
+  position: absolute;
+}
+
+@media (max-width: 991.98px) {
+  header .navbar-brand.absolute {
+    position: relative;
+  }
+}
+
+header .navbar-brand span {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  header .navbar-brand span {
+    color: white;
+  }
+}
+
+header .navbar {
+  background: rgb(72, 72, 233);
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+@media (min-width: 768px) {
+  header .navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+    background: none !important;
+    position: relative;
+  }
+}
+
+header .navbar .nav-link {
+  padding: 1.7rem 1rem;
+  outline: none !important;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+.nav-link a:hover{
+  background-color: black !important;
+}
+
+@media (max-width: 1980px) {
+  header .navbar .nav-link {
+    padding: .5rem 0rem;
+  }
+}
+
+header .navbar .nav-link.active {
+  color: #fff ;
+}
+
+header .navbar .dropdown-menu {
+  font-size: 14px;
+  border-radius: 4px;
+  border: none;
+  -webkit-box-shadow: 0 2px 30px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 30px 0px rgba(0, 0, 0, 0.2);
+  min-width: 13em;
+  margin-top: -10px;
+}
+
+header .navbar .dropdown-menu:before {
+  bottom: 100%;
+  left: 10%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-bottom-color: #fff;
+  border-width: 7px;
+}
+
+@media (max-width: 991.98px) {
+  header .navbar .dropdown-menu:before {
+    display: none;
+  }
+  header .navbar .login-btn  {
+    background:rgb(217, 175, 25);
+    color: #fff !important;
+    text-transform: uppercase;
+    font-size: .8rem;
+    margin-top: 2%;
+    font-weight: bold;
+    text-align: center;
+    width: 100px;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+    border-radius: 5px;
+  
+  }
+  header .navbar .signup-btn  {
+    background:rgb(45, 200, 130);
+    color: #fff !important;
+    text-transform: uppercase;
+    font-size: .8rem;
+    margin-top: 2%;
+    font-weight: bold;
+    text-align: center;
+    width: 100px;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+    border-radius: 5px;
+    
+  
+  }
+}
+
+header .navbar .dropdown-menu .dropdown-item:hover {
+  background: rgb(72, 72, 233);
+  color: #fff;
+}
+
+header .navbar .dropdown-menu .dropdown-item.active {
+  background: rgb(72, 72, 233);
+  color: #fff;
+}
+
+header .navbar .dropdown-menu a {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+
+
+header .navbar .login-btn a:hover {
+  background: #fff;
+  color: rgb(72, 72, 233) !important;
+  -webkit-box-shadow: 2px 0 30px -5px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 0 30px -5px rgba(0, 0, 0, 0.2);
+}
+.nav-btn{
+  background-color: black;
+  padding: 15px 20px !important;
+  line-height: 1;
+  font-weight: bold;
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+  display: flex;
+  
+}
+
+.nav-btn{
+  background-color: rgb(72, 72, 233);
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  gap: 5%;
+}
+.nav-btn :hover{
+  cursor: pointer;
+  scale: 1.05;
+}
+
+header .navbar .login-btn  {
+  background:rgb(217, 175, 25);
+  color: #fff !important;
+  text-transform: uppercase;
+  font-size: .8rem;
+  
+  font-weight: bold;
+  text-align: center;
+  width: 100px;
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+  border-radius: 5px;
+
+}
+header .navbar .signup-btn  {
+  background:rgb(45, 200, 130);;
+  color: #fff !important;
+  text-transform: uppercase;
+  font-size: .8rem;
+  font-weight: bold;
+  text-align: center;
+  width: 100px;
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+  border-radius: 5px;
+}footer {
+  padding-top: 30px;
+  background-color:rgb(72, 72, 233);
+  color: rgb(251, 250, 250);
+}
+
+footer a {
+  color: rgb(255, 255, 255);
+  text-decoration:none;
+}
+
+footer a:hover, footer a:focus {
+  color: #aaa;
+  text-decoration:none;
+  border-bottom:1px dotted #999;
+}
+
+footer .form-control {
+    background-color: #f5f6f9;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    resize: none;
+    color: #fbfcfc;
+    padding: 0.7em 1em;
+}
+
+footer hr{
+  border-color: #f5f6f9;
+}
+.send{
+    border-radius: 5px;
+    color: white;
+    display: inline;
+    background-color: #2f1d4e;
+
+}
+.send :hover{
+    scale: 1.1;
+    box-shadow: 2px 2px black;
+}
+
+
+.edit:hover{
+  cursor: pointer;
+}
+.table{
+  max-width: 60%;
+}
+.update{
+  text-align: center;
+}
+.center{
+  margin: auto;
+}
+.tests{
+    display: flex;
+  justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    justify-content: space-around;
+    align-items: flex-start;
+
+}
+.card{
+    width: 30%;
+    margin: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .card {
+      width: 60%;
+    }
+  }
